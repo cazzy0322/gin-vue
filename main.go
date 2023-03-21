@@ -1,12 +1,7 @@
 package main
 
-import (
-	"github.com/cazzy0322/gin-vue/controller"
-	"github.com/gin-gonic/gin"
-)
+import "github.com/cazzy0322/gin-vue/router"
 
 func main() {
-	r := gin.Default()
-	r.GET("/ping", controller.Ping)
-	r.Run(":8080")
+	router.Run()
 }
